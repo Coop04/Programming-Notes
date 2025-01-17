@@ -5,4 +5,4 @@ myenv/
 Internship/
 *.pdf
 Pandas/Tutorial/data/
-.vscode
+*.vscode/
