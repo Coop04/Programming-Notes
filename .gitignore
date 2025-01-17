@@ -1,0 +1,7 @@
+myenv/
+.env
+*.exe
+*.class
+Internship/
+*.pdf
+Pandas/Tutorial/data/
