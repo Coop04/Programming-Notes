@@ -1,8 +1,8 @@
 myenv/
 .env
 *.exe
-**/*.exe
 *.class
 Internship/
 *.pdf
 Pandas/Tutorial/data/
+.vscode
