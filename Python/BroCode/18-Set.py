@@ -5,7 +5,7 @@ utensils = {"fork","spoon","knife","knife","knife"} #only prints knife once
 dishes = {"bowl","plate","cup","knife"}
 dinner_table = utensils.union(dishes)
 
-print(utensils)  # Output: {'fork', 'spoon', 'knife'}
+print(utensils)  # Output: {'fork', 'spoon', 'knife'} ie, even after union the utensils set is unaffected
 
 utensils.add("napkin")
 utensils.remove("knife")

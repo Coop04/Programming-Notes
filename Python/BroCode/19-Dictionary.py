@@ -40,7 +40,7 @@ capitals.update({"USA":"Las Vegas"})
 capitals.pop("China")
 # capitals.clear() #clears the dictionary
 
-# to append values/ udate values
+# to append values/ update values
 capitals['A']='B'
 capitals['Germany']= 'Goa'
 for i,j in capitals.items():
