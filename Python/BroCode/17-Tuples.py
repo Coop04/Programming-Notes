@@ -14,3 +14,5 @@ for i in student:
 
 if "Bro" in student:
     print("Bro is here")
+
+print(teacher) # ('Teach', 32, 'female', 'college')
