@@ -4,6 +4,7 @@ animal = "cow"
 item = "moon"
 
 print(f"{animal} jumped over the {item}")   # most simple way
+print(animal+' jumped over the '+item)
 
 # print("The "+animal+" jumped over the "+item)
 
