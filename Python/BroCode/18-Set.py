@@ -11,6 +11,8 @@ utensils.add("napkin")
 utensils.remove("knife")
 # utensils.clear() #clears the set
 
+print(utensils)
+
 # for i in utensils:
 #     print(i) #different order each time on running
 

@@ -3,7 +3,7 @@ num2 = 100000000
 
 print(f'The value of pi is: {num1:.2f}')
 print(f'The value of pi is: {num1:,}')
-print(f'The value of pi is: {num2:,}')
+print(f'The value of num2 is: {num2:,}')
 
 print("The value of pi is: {}".format(num1))
 print("The value of pi is: {:.2f}".format(num1)) # to limit the decimal value to 2 places (f = float) also no. is rounded
