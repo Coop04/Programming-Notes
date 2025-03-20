@@ -33,3 +33,58 @@ for i in range (3):
     items.append(k)
 
 print(items)
+
+# copying a string
+
+a = [1, 2, 3]
+b = a
+b.append(4)
+print(a) # [1,2,3,4] since b is not a list (b is another reference to a )
+
+# proper way to copy
+a = [1, 2, 3]
+b = a[:]  # Slicing method
+b.append(4)
+print(a)  # [1, 2, 3]
+print(b)  # [1, 2, 3, 4]
+
+# proper way to copy
+a = [1, 2, 3]
+b = a.copy()  # Using list.copy()
+b.append(4)
+print(a)  # [1, 2, 3]
+print(b)  # [1, 2, 3, 4]
+
+# -----------------------------
+
+def func(val, lst=[]):
+    lst.append(val)
+    return lst
+
+print(func(1))  # [1]
+print(func(2))  # [1, 2]
+print(func(3))  # [1, 2, 3]
+
+
+def func(val, lst=None):
+    if lst is None:
+        lst = []  # Creates a new list for each function call
+    lst.append(val)
+    return lst
+
+print(func(1))  # [1]
+print(func(2))  # [2]
+print(func(3))  # [3]
+
+# to merge 2 lists
+a = [1,2,3,4,5]
+b = [3,4,5,6]
+c = []
+c.extend(a)
+c.extend(b)
+print(c)
+
+d = []
+d.append(a)
+d.append(b)
+print(d)

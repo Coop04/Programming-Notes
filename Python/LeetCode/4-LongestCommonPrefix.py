@@ -5,18 +5,24 @@ class Solution(object):
         :rtype: str
         """
         k=0
-        l = []
         num = len(strs)
-        for index,i in enumerate(strs):
+        i = strs[0]
+        temp = 0
+        s=''
+        while(k<(len(i))):
             flag = 1
-            for j in strs[index+1::]:
-                if(i[k]==j[k]):
-                    flag+=1
-                else:
-                    break
-                if(flag == num):
-                    l.append(i[k])
-            if(flag != num):
+            if not strs or "" in strs:
+                return ""
+            for j in strs[1::]:
+                if(k<len(j)):
+                    if(i[k]==j[k]):
+                        flag+=1
+                    else:
+                        temp = 1
+                        break
+            if(flag == num and temp == 0):
+                s+=i[k]
+                k+=1
+            else:
                 break
-            k+=1
-        return l
+        return s
