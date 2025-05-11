@@ -160,11 +160,22 @@
 
 # ------------------------
 
-alpha = ['A','B','C','D']
+# alpha = ['A','B','C','D']
 
-for i in range(len(alpha)+1):
-    for j in range(i):
-        print(alpha[j],end=' ')
-    print()
+# for i in range(len(alpha)+1):
+#     for j in range(i):
+#         print(alpha[j],end=' ')
+#     print()
 
 # -------------------------------
+
+# num = int('ab')
+# print(num)
+
+#--------------------------------
+
+# import os
+# print(os.name)
+
+# import sys
+# print(sys.argv)

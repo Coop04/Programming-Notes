@@ -10,9 +10,22 @@ except ZeroDivisionError as e: # to also see the error message use as e and then
     print(e)
 except ValueError:
     print("Error: Invalid input. Please enter a valid number")
-except Exception: # not a good practice to write only the Exception block (need to be specific first)
-    print("An error occurred")
-else:  # i think it works auto,automatically
+except Exception as e: # not a good practice to write only the Exception block (need to be specific first)
+    print("An error occurred",e)
+else:  # if no exception was raised else will be executed
     print(result)
 finally: # always at end
     print("Finally:this will always run") # this will run even if there is an exception or not
+
+# -----------------------------------------------------------------------------------
+
+# We can reise exceptions using raise statement
+
+try: 
+    age = int(input("Enter the age:")) 
+    if(age<18): 
+        raise ValueError 
+    else: 
+        print("the age is valid") 
+except ValueError: 
+    print("The age is not valid")

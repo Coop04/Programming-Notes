@@ -45,3 +45,26 @@ capitals['A']='B'
 capitals['Germany']= 'Goa'
 for i,j in capitals.items():
     print(i + '\t: '+ j)
+
+print()
+
+print(capitals.get('UA','Invalide key')) # we can use a default fallback value inside a get() if the key value is not found
+print()
+# ----------------------------------------------------
+# Switch using dictionary 
+
+def get_week_day(argument):
+    switcher = {
+        0: "Sunday",
+        1: "Monday",
+        2: "Tuesday",
+        3: "Wednesday",
+        4: "Thursday",
+        5: "Friday",
+        6: "Saturday"
+    }
+    return switcher.get(argument, "Invalid day")
+
+print(get_week_day(6))
+print(get_week_day(8))
+print(get_week_day(0))
