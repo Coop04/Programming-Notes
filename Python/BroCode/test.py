@@ -119,7 +119,7 @@
 
 # print(dict.items())
 
-# print(dict.key('sal'))
+# print(list(dict.keys()))
 # --------------------------
 
 # def isPalindrome(str):
@@ -143,6 +143,9 @@
 
 # l = 'pop,pu'
 # print(l.split(','))
+# words = l.split(',')
+# print(words)
+# print('     '.join(words))
 
 # # ------------------------
 # a = 5
@@ -274,34 +277,21 @@
 
 # ------------------------------------------------
 
-# def sub_check(l, s):
-#     k = 0  # Pointer for list s
-#     for i in range(len(l)):
-#         if k < len(s):
-#             if l[i] == s[k]:
-#                 k += 1  # Move the pointer in s if there's a match
-#             if k == len(s):  # If all elements in s are matched
-#                 return True
-#             if (k>0 and l[i]!=s[k]):
-#                     break
-        
-#     if k == len(s):  # If all elements in s are matched
-#         return True
-#     return False  # If not all elements in s are matched
-
-# # Test cases
-# l = [1, 2, 3, 4]
-# s1 = [2, 4]  # Not a subsequence
-# s2 = [3, 4]  # Is a subsequence
-# print(sub_check(l, s1))  # Output: False
-# print(sub_check(l, s2))  # Output: True
+# def contains_sublist(main_list, sub_list):
+#     n = len(sub_list)
+#     for i in range(len(main_list) - n + 1):
+#         if main_list[i:i+n] == sub_list:
+#             return True
+#     return False
 
 # ----------------------------------------------
 
 # import turtle
 
 # t = turtle.Turtle()
-# t.color('black','red')
+# # t.color('black','red')
+# t.pencolor('black')
+# t.fillcolor('yellow')
 # t.begin_fill()
 # for i in range(5):
 #     t.forward(100)
@@ -572,3 +562,25 @@
 # print(contains_sublist(l,y))
 
 # ----------------------------------------
+
+# def readMat():
+#     m = int(input('enter no. of rows: '))
+#     n = int(input('enter no. of cols: '))
+#     mat = []
+#     for i in range(m):
+#         row = []
+#         for j in range(n):
+#             k = int(input('enter the values: '))
+#             row.insert(j,k)
+#         mat.insert(i,row)
+#     return mat
+
+# a = readMat()
+# b = readMat()
+# print(a)
+# import numpy as np
+# a = np.array(a)
+# b = np.array(b)
+# print(a@b)
+
+# --------------------------------------------

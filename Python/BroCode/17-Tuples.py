@@ -16,3 +16,16 @@ if "Bro" in student:
     print("Bro is here")
 
 print(teacher) # ('Teach', 32, 'female', 'college')
+
+# --------------------------------------------
+# to read elements into a tuple
+
+n=int(input("Enter how many numbers .... ")) 
+print('Enter numbers') 
+t=tuple() 
+for i in range(n): 
+    x=int(input()) 
+    t=t+(x,) # , is necessary in (x,)
+print("minimum=",min(t)) 
+print("maximum=",max(t)) 
+print("sum=",sum(t)) 
