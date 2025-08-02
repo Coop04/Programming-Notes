@@ -14,8 +14,9 @@ print(food)
 food.remove("burger")
 print(food)
 
-food.pop() # or food.pop(1) : which pops the item at the given index (same as remove but with index)
+x = food.pop() # or food.pop(1) : which pops the item at the given index (same as remove but with index)
 print(food)
+print(x)
 
 food.insert(1,"cake")
 print(food)
@@ -83,6 +84,9 @@ c = []
 c.extend(a)
 c.extend(b)
 print(c)
+# or use +
+m = a+b
+print(m)
 
 d = []
 d.append(a)

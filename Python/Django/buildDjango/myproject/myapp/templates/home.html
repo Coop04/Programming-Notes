@@ -1,0 +1,10 @@
+<p>Hello</p>
+
+<!-- to add css use style -->
+<form action="" method="post" style="background-color: aquamarine">
+  <!-- {% csrf_token %} is simply a way of telling Django that form data is safe -->
+  <!-- default is {{forms}} but use {{forms.as_p}} for prettier look (The form elements are wrapped inside <p>..</p> tags.) -->
+  {% csrf_token %} {{form.as_p}}
+
+  <input type="submit" value="Submit" />
+</form>

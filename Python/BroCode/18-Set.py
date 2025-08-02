@@ -4,6 +4,7 @@
 utensils = {"fork","spoon","knife","knife","knife"} #only prints knife once
 dishes = {"bowl","plate","cup","knife"}
 dinner_table = utensils.union(dishes)
+print(dinner_table)
 
 print(utensils)  # Output: {'fork', 'spoon', 'knife'} ie, even after union the utensils set is unaffected
 
