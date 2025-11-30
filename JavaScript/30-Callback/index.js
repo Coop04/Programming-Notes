@@ -7,7 +7,7 @@
 
 //      'Hey, when you are done call this next'
 
-// js will not wait around a long time to execue a next function if the current function is consuming more time
+// js will not wait around a long time to execute a next function if the current function is consuming more time
 function hello() {            
     setTimeout(function() {
         console.log('Hello!')

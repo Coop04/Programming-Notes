@@ -2,7 +2,7 @@
 // condetion ? codeIfTrue : codeIfFalse;
 
 let age = 21;
-let message1 = age >= 18 ? `You are an adult` : `You are a minor`
+let message1 = age >= 18 ? `You are an adult` : `You are a minor`;
 console.log(message1);
 
 // ----------------------------------------------------------------

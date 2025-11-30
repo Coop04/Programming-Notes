@@ -23,7 +23,7 @@ console.log(userName.includes('d')); // true
 
 let phoneNumber1 = '123-456-789';
 phoneNumber = phoneNumber1.replaceAll('-','');
-console.log(phoneNumber1); // 123-456-789
+console.log(phoneNumber); // 123456789
 let phoneNumber2 = '123-456-789'; 
 phoneNumber2 = phoneNumber2.padStart(15, '0'); // first arguement is the length that we need and 2nd arguement fills it with the value specified
 console.log(phoneNumber2); //0000123-456-789

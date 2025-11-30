@@ -11,7 +11,7 @@ function convert() {
     if(toFahrenheit.checked) {
         temp = Number(textBox.value);
         temp = temp * 9 /5 +32;
-        result.textContent = `${temp.toFixed(2)} °F`; // typer alt + 0176 for degree symbol
+        result.textContent = `${temp.toFixed(2)} °F`; // type alt + 0176 for degree symbol
     }
     else if(toCelsius.checked) {
         temp = Number(textBox.value);

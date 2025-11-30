@@ -1,7 +1,9 @@
 %{ 
 #include<stdio.h> 
 #include<stdlib.h> 
-int f=0; 
+
+int yyerror()
+int yylex()
 %} 
 %token num 
 %left '+' '-' 
@@ -19,11 +21,9 @@ num {$$=$1;};
 int main(){ 
 printf("Enter: \n"); 
 yyparse(); 
-if(f==0) 
 printf("valid \n"); 
 } 
 int yyerror(){ 
 printf("invalid\n"); 
-f=1; 
 exit(0); 
 }

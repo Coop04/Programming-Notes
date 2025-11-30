@@ -19,6 +19,6 @@ let radius1;
 let circumfrence1;
 document.getElementById('myButton').onclick = function(){
     radius1 = Number(document.getElementById('myInput').value);
-    circumfrence1 = 2 * PI * radius1
+    circumfrence1 = 2 * PI * radius1;
     document.getElementById('myPexp6').textContent = `Circumference of the circle: ${circumfrence1} cm`;
 }

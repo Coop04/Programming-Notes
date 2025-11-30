@@ -1,0 +1,5 @@
+* B C A
++ E F G
+/ S R T
+- Q P R
+= X - Z
