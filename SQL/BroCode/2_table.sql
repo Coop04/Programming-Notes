@@ -20,12 +20,15 @@ DROP TABLE employees; -- we need the table so dont execute
 
 -- to alter a table
 ALTER TABLE employees 
-ADD phone_number VARCHAR(15);
+ADD column phone_number VARCHAR(15);
 
 -- to rename a column
 ALTER TABLE employees
 RENAME COLUMN phone_number to email;
 
+
+-- Use MODIFY when you want to change the definition of an existing column.
+-- ------------------------------------------------------------------------
 -- to change the datatype of a column
 ALTER TABLE employees
 MODIFY COLUMN email VARCHAR(100);

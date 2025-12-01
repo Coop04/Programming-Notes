@@ -56,7 +56,7 @@ public class _15_stringbuilder {
         }
         System.out.println(str);
 
-        // reversing string the notmal way
+        // reversing string the normal way
         String dog = "bark";
         char[] arr = dog.toCharArray();
         for(int i=0;i<dog.length()/2;i++) {

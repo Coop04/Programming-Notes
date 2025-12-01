@@ -13,7 +13,7 @@ create table products (
 
 -- alter a table to add default values
 alter table products
-alter price set default 0
+alter price set default 0; -- or use MODIFY column price int default 0;
 
 insert into products (product_id, product_name) -- when only inserting partial date remember to add column names along with the table name
 values (104, "napkin"),

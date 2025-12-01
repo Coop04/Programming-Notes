@@ -4,9 +4,13 @@
 
 -- when creating a table
 create table transaction(
-    transction_id int primary key auto_increment, -- by defaylt primary key is set to 1
+    transaction_id int primary key AUTO_INCREMENT, -- by defaylt primary key is set to 1
     amount decimal(5,2)
 );
+
+-- to add autoincrement in an existing table
+alter table transaction
+MODIFY column transaction_id int AUTO_INCREMENT;
 
 
 select * from transaction;
@@ -16,9 +20,9 @@ VALUES  (20.0),
         (30.0),
         (40.0);
 
--- to do auto increment in an existing table
+-- to do auto increment from a specific value in an existing table (which already has autoincrement set up)
 alter table transaction
-AUTO_INCREMENT = 1000; -- now it will auto increment from 1000
+AUTO_INCREMENT = 1000; -- now it will auto increment from 1000 (only one auto increment in a table , so no need to specify the column name)
 
 insert into transaction(amount)
 values (40.0),

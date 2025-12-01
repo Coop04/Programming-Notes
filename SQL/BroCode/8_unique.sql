@@ -7,6 +7,19 @@ create table products (
 
 select * from products;
 
+-- ---------------------------------------------------------
+-- Use ADD CONSTRAINT when you want to add a rule such as:
+
+-- PRIMARY KEY
+
+-- FOREIGN KEY
+
+-- UNIQUE
+
+-- CHECK
+
+-- DEFAULT (sometimes supported via constraint)
+-- ---------------------------------------------------------
 -- if you forgot to add unique when creating a product
 alter table products
 add CONSTRAINT UNIQUE(product_name);
