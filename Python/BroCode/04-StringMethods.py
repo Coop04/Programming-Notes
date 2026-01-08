@@ -1,6 +1,7 @@
 name="Aswanth Satheesan"
 name1="AswanthSatheesan"
 age="21"
+username = "Coop04"
 print(len(name))
 print(name.find("S"))
 print(name.capitalize())
@@ -10,6 +11,8 @@ print(name.isdigit())
 print(age.isdigit())
 print(name.isalpha())
 print(name1.isalpha())
+print(username.isalnum())
+print(name.isalnum())
 print(name.count('a'))
 print(name.replace("a","z"))
 print((name+" ")*3)

@@ -13,7 +13,7 @@ print(last_name)
 funky_name=name[::2] #step is by default 1,when changed to 2 , it only reads every 2nd letter
 print(funky_name)    #output: AwnhStesn
 
-reversed_string=name[::-1] #linke counting backwords
+reversed_string=name[::-1] #like counting backwards
 print(reversed_string) #output: naseehtaS htnawsA
 
 

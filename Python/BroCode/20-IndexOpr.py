@@ -8,7 +8,7 @@ name = "bro Code!"
 
 first_name = name[:3].upper()
 last_name = name[4:].lower()
-last_char = name[-1:]
+last_char = name[-1:] # or just name[-1]
 
 print(first_name)
 print(last_name)

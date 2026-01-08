@@ -8,6 +8,18 @@ for i in range(10):
 # for i in "Aswanth Satheesan":
 #     print(i)
 
+# to revese iterate a string
+s = "Aswanth"
+for ch in range(len(s)-1,-1,-1):
+    print(s[ch],end="")
+
+print()
+
+for ch in s[::-1]:
+    print(ch,end="")
+
+print()
+
 for seconds in range(10,0,-1):
     print(seconds,end=" ")
     time.sleep(1)

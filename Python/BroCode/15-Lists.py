@@ -1,6 +1,6 @@
 # list = used to store multiple items in a single variable
 
-food = ["pizza","burger","biriyani"]
+food = ["pizza","burger","biriyani","burger"]
 food[0]="sushi" #replaces the 0th element
 print(food)
 print(food[1])
@@ -8,10 +8,12 @@ print(food[1])
 for i in food:
     print(i)
 
+print(len(food))
+
 food.append("ice cream")
 print(food)
 
-food.remove("burger")
+food.remove("burger") # only the first occurnance will be removed
 print(food)
 
 x = food.pop() # or food.pop(1) : which pops the item at the given index (same as remove but with index)
@@ -26,6 +28,47 @@ print(food)
 
 food.clear()
 print(food)
+# -----------------------------------------
+
+# to remove duplicates from a list
+
+l1 = ['c','d', 'a', 'b','d','b', 'i','a']
+
+# if order doesnt matter
+l2 = list(set(l1)) 
+print(l2) # ['a', 'd', 'c', 'b', 'i']
+
+# by preserving order
+d = {}
+for i in l1:
+    if i not in d:
+        d[i] = 1
+    else: 
+        d[i]+=1
+l3 = list(d.keys())
+print(l3) # ['c', 'd', 'a', 'b', 'i'] preserves order
+
+# or 
+l4 = list(dict.fromkeys(l1))
+print(l4) # ['c', 'd', 'a', 'b', 'i'] preserves order
+
+# removing duplicates without dict:
+l5 = l1.copy()
+for i in range(len(l1)):
+    if l5[i]=='-':
+        continue
+    for j in range(i+1,len(l1)):
+        if l5[j]=='-':
+            continue
+        elif l5[i]==l5[j]:
+            l5[j]='-'
+l6 = []
+for i in l5:
+    if i!='-':
+        l6.append(i)
+print(l6)
+
+# --------------------------------------------
 
 # inputting to list
 items = []
@@ -65,6 +108,7 @@ def func(val, lst=[]):
 print(func(1))  # [1]
 print(func(2))  # [1, 2]
 print(func(3))  # [1, 2, 3]
+print(func(3,[5,6])) # [5, 6, 3]
 
 
 def func(val, lst=None):
@@ -92,3 +136,34 @@ d = []
 d.append(a)
 d.append(b)
 print(d)
+# -----------------------
+
+# to remove duplicates from an array
+
+l1 = ['c','d', 'a', 'b','d','b', 'i','a']
+
+# if order doesnt matter
+l2 = list(set(l1)) 
+print(l2) # ['a', 'd', 'c', 'b', 'i']
+
+# by preserving order
+d = {}
+for i in l1:
+    if i not in d:
+        d[i] = 1
+    else: 
+        d[i]+=1
+l3 = list(d.keys())
+print(l3) # ['c', 'd', 'a', 'b', 'i']
+
+# or 
+l4 = list(dict.fromkeys(l1))
+print(l4)
+
+# ---------------------------------------------
+
+# to convert the data type of all the elements in a list
+
+lst = ['1', '2', '3', '4']
+new_lst = list(map(int, lst))
+print(new_lst)

@@ -40,6 +40,8 @@ capitals.update({"USA":"Las Vegas"})
 capitals.pop("China")
 # capitals.clear() #clears the dictionary
 
+# -------------------------------------------------
+
 # to append values/ update values
 capitals['A']='B'
 capitals['Germany']= 'Goa'
@@ -48,6 +50,22 @@ for i,j in capitals.items():
 
 print()
 
+# to delete a value from dictionary
+capitals.pop('A')
+print(capitals)
+
+print()
+# ---------------------------------------------------
+# to compare 2 dictionaries
+d1 = {1:'a',2:'b',3:'c'}
+d2 = {2:'b',1:'a',3:'c'}
+if d1 == d2:
+    print("They are equal")
+else:
+    print("They are different")
+
+print()
+# ----------------------------------------------------
 print(capitals.get('UA','Invalide key')) # we can use a default fallback value inside a get() if the key value is not found
 print()
 # ----------------------------------------------------
@@ -68,3 +86,12 @@ def get_week_day(argument):
 print(get_week_day(6))
 print(get_week_day(8))
 print(get_week_day(0))
+
+# ---------------------------------------------------------
+# to sort dictionaries by keys
+d = {'b': 2, 'a': 1, 'c': 3}
+
+sorted_d1 = dict(sorted(d.items())) # by ascending order of keys
+sorted_d2 = dict(sorted(d.items(), reverse=True)) # by descending order of keys
+print(sorted_d1)
+print(sorted_d2)

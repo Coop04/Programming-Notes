@@ -1,5 +1,5 @@
 rows=int(input("Enter Rows: "))
-cols=int(input("Enter Columnss: "))
+cols=int(input("Enter Columns: "))
 sym=input("Enter a symbol to use: ")
 
 for i in range(rows):
