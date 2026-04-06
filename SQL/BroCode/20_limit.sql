@@ -1,7 +1,7 @@
 -- Active: 1731173242441@@127.0.0.1@3306@brocode
 
 -- limit clause is used to limit the number of records. 
--- useful if you re working with a number of data
+-- useful if you are working with a number of data
 -- can be used to display a large dataset on different pages (pagination)
 
 select * from customers;

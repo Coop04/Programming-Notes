@@ -1,7 +1,7 @@
 x=1
 y=2.0
 z='3'
-print(type(z)) # can use bot "" and '' for string
+print(type(z)) # can use both "" and '' for string
 
 y=int(y) #permanant change
 

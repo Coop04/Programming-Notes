@@ -1,6 +1,6 @@
 -- Active: 1731173242441@@127.0.0.1@3306@brocode
 
--- joins: clause that is used to combine rows from 2 or more tables based on a related column between the such as a foreign key
+-- joins: clause that is used to combine rows from 2 or more tables based on a related column between them such as a foreign key
 
 INSERT INTO transactions (amount, customer_id)
 VALUES (1.00, NULL); -- foreign key (customer_id) can be null

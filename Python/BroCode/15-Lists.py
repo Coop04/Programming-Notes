@@ -136,29 +136,6 @@ d = []
 d.append(a)
 d.append(b)
 print(d)
-# -----------------------
-
-# to remove duplicates from an array
-
-l1 = ['c','d', 'a', 'b','d','b', 'i','a']
-
-# if order doesnt matter
-l2 = list(set(l1)) 
-print(l2) # ['a', 'd', 'c', 'b', 'i']
-
-# by preserving order
-d = {}
-for i in l1:
-    if i not in d:
-        d[i] = 1
-    else: 
-        d[i]+=1
-l3 = list(d.keys())
-print(l3) # ['c', 'd', 'a', 'b', 'i']
-
-# or 
-l4 = list(dict.fromkeys(l1))
-print(l4)
 
 # ---------------------------------------------
 

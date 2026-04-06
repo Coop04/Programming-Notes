@@ -1,7 +1,7 @@
 -- Active: 1731173242441@@127.0.0.1@3306@brocode
 
 -- counting number of rows (count)
-select count(amount) -- counts how many rows are within that column (null values are not counted, so only the no. of transactions will be there, but if you give transaction_id , even if it have null value feor amount in a row , it will still count)
+select count(amount) -- counts how many rows are within that column (null values are not counted, so only the no. of transactions will be there, but if you give transaction_id , even if it have null value for amount in a row , it will still count)
 from transactions; -- can also add a where clause
 
 select count(amount) as "today's transactions" -- use as to rename a column
