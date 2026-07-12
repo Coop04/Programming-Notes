@@ -587,3 +587,14 @@
 # a = "hello"
 # b = "kitty"
 # print(a+b)
+
+# ---------------------------------------------
+# def peakElement(arr = [1,2,4,5,7,8,3]):
+#         # Code here
+#         for i in range(1,len(arr)-1):
+#             if arr[i-1] < arr[i] and arr[i+1] < arr[i]:
+#                 return True
+#             print(arr[i-1],arr[i],arr[i+1])
+#         return False
+
+# print(peakElement())

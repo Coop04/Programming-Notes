@@ -20,7 +20,7 @@ public class _15_string_methods {
         // System.out.println(name1.isEmpty()); // false
 
         // -------------------------------------------------------
-        // checking id string has a character
+        // checking if string has a character
 
         if(name.contains(" ")) {
             System.out.println("Your name contains a space");

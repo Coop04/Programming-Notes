@@ -37,7 +37,7 @@ public class _15_stringbuilder {
 
         // reverse and store it to another string
         String greet = "hola";
-        String sReverse = new StringBuilder(greet).reverse().toString(); // to string converts StringBuilder into a string
+        String sReverse = new StringBuilder(greet).reverse().toString(); // toString converts StringBuilder into a string
         System.out.println(sReverse);
         System.out.println(greet);
 

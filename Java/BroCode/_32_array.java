@@ -1,5 +1,5 @@
 import java.util.Arrays;
-public class _32_arrays {
+public class _32_array {
     public static void main(String[] args) {
         // array = a collection of values of same data type
 

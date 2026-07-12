@@ -51,6 +51,9 @@ public class _3_input {
         // when using Scanner methods like next(), nextInt(), nextDouble() etc. when we type the input and press enter(\n)
         // it will not automatically consume the \n like nextLine(). so the buffer will not be empty while reading something next.
         // and that might cause error of reading unwanted characters.
+
+        // so when using nextLine() function after the use of next(), nextInt(), nextLine() etc..
+        // always use a 'scanner.nextLine()' to consume the enter (\n) in the input buffer
         
         scanner.nextLine(); // to slove this issue use nextLine() method without assigning it to anything. It will consume the \n
 

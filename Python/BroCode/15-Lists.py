@@ -28,6 +28,14 @@ print(food)
 
 food.clear()
 print(food)
+
+# -----------------------------------------
+
+# to search and find the index of an element
+l = [1,2,3,4]
+if 3 in l:
+    print(l.index(3)) # 2
+    
 # -----------------------------------------
 
 # to remove duplicates from a list
@@ -144,3 +152,20 @@ print(d)
 lst = ['1', '2', '3', '4']
 new_lst = list(map(int, lst))
 print(new_lst)
+
+# ----------------------------------------------
+
+# To get the index of an element in the list
+
+my_list = ["apple", "banana", "orange"]
+index = my_list.index("banana")
+print(index)
+
+# ----------------------------------------------
+
+# To count number of occurance of an element
+
+numbers = [1, 2, 3, 2, 2, 4]
+print(numbers.count(2))
+
+# ----------------------------------------------

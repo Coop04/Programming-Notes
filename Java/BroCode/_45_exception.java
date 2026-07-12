@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class _43_exception {
+public class _45_exception {
     public static void main(String[] args) {
 
         // Exception = An event that interrupts the normal flow of a program

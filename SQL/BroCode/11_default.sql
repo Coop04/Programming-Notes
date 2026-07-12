@@ -7,7 +7,7 @@ SELECT * from products;
 -- when creating new table with default (dont do this now , since we already have the table)
 create table products ( 
     product_id int,
-    priduct_name VARCHAR(25),
+    product_name VARCHAR(25),
     price DECIMAL(4,2) DEFAULT 0
 );
 
@@ -15,7 +15,7 @@ create table products (
 alter table products
 alter price set default 0; -- or use MODIFY column price int default 0;
 
-insert into products (product_id, product_name) -- when only inserting partial date remember to add column names along with the table name
+insert into products (product_id, product_name) -- when only inserting partial data remember to add column names along with the table name
 values (104, "napkin"),
         (105, "straw"),
         (106, "spoon"),

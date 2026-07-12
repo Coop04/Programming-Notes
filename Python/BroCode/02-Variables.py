@@ -35,3 +35,12 @@ human=True
 print(human)
 print(type(human))
 print("Are you a human: "+ str(human))
+
+# to use infinity
+# +ve
+infy = float('inf')
+print(infy)
+
+# -ve
+neg_infy = float('-inf')
+print(neg_infy)
